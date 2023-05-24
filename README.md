@@ -1,5 +1,5 @@
 # DelphiMethodHijack
-Method Hijack for Delphi
+Method Hijack for Delphi (Win32 only)
 
 
 Hi, Delphi community :)
