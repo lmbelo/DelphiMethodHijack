@@ -103,10 +103,10 @@ end;
 
 procedure TInjector.Disable;
 var
-  LNumBytesWritten: DWord;
+  LNumBytesWritten: NativeUInt;
 begin
   if FInjection.JMP <> 0 then begin
-    WriteProcessMemory(GetCurrentProcess, GetActualAddr(FFromAddr), @FInjection, SizeOf(TInjection), LNumBytesWritten);
+    WriteProcessMemory(GetCurrentProcess, GetActualAddr(FFromAddr), @FInjection, NativeUInt(SizeOf(TInjection)), LNumBytesWritten);
   end;
 end;
 
